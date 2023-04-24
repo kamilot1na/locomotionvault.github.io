@@ -167,6 +167,55 @@ $("#filter-controls").on("change", ".filter-checkboxes input:checkbox", function
   updateViews();
 });
 
+$("#bulk-select-btn").on("click", function() {
+  // Get all filter checkboxes and mark them as checked
+  $(".filter-checkboxes input:checkbox").prop("checked", true);
+
+  // Trigger the change event on all filter checkboxes
+  $(".filter-checkboxes input:checkbox").trigger("change");
+});
+
+
+$("#bulk-deselect-btn").on("click", function() {
+  // Get all filter checkboxes and mark them as checked
+  $(".filter-checkboxes input:checkbox").prop("checked", false);
+
+  // Trigger the change event on all filter checkboxes
+  $(".filter-checkboxes input:checkbox").trigger("change");
+});
+
+$("#select-direction-btn").on("click", function() {
+  // Get all checkboxes inside the filter with data-filter value "direction" and mark them as checked
+  $(".filter-checkboxes[data-filter='direction'] input:checkbox").prop("checked", true);
+
+  // Trigger the change event on all checkboxes inside the filter with data-filter value "direction"
+  $(".filter-checkboxes[data-filter='direction'] input:checkbox").trigger("change");
+});
+
+$("#deselect-direction-btn").on("click", function() {
+  // Get all checkboxes inside the filter with data-filter value "direction" and mark them as checked
+  $(".filter-checkboxes[data-filter='direction'] input:checkbox").prop("checked", false);
+
+  // Trigger the change event on all checkboxes inside the filter with data-filter value "direction"
+  $(".filter-checkboxes[data-filter='direction'] input:checkbox").trigger("change");
+});
+
+$("#select-hardware-btn").on("click", function() {
+  // Get all checkboxes inside the filter with data-filter value "direction" and mark them as checked
+  $(".filter-checkboxes[data-filter='hardware'] input:checkbox").prop("checked", true);
+
+  // Trigger the change event on all checkboxes inside the filter with data-filter value "direction"
+  $(".filter-checkboxes[data-filter='hardware'] input:checkbox").trigger("change");
+});
+
+$("#deselect-hardware-btn").on("click", function() {
+  // Get all checkboxes inside the filter with data-filter value "direction" and mark them as checked
+  $(".filter-checkboxes[data-filter='hardware'] input:checkbox").prop("checked", false);
+
+  // Trigger the change event on all checkboxes inside the filter with data-filter value "direction"
+  $(".filter-checkboxes[data-filter='hardware'] input:checkbox").trigger("change");
+});
+
 
 $("#similarity-threshold-slider").on("change",function(event){
   newValue =$(this).val();

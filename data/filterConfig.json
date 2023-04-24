@@ -538,6 +538,11 @@
           "title" : "High",
           "value" : "high",
           "checked" : false
+        },
+        {
+          "title" : "Ultra",
+          "value" : "ultra",
+          "checked" : false
         }
       ],
       "filter" : true,

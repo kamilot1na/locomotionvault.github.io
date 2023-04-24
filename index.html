@@ -36,6 +36,7 @@
                   <li><a href="https://github.com/locomotionvault/locomotionvault.github.io/issues" target="_blank">Suggest a change</a></li>
                   <li><a href="https://locomotionvault.github.io/workshopieeevr.html" target="_blank">IEEE VR Workshop</a></li>
                   <li><a href="https://locomotionvault.github.io/about.html">About</a></li>
+                  <li><a href="/addAttributes.html">Add attributes</a></li>
               </ul>
         </div>
       </nav>
@@ -75,6 +76,14 @@
       </div>
    		<div id="sidebar" class="uk-width-1-3">
             <div class="uk-margin-bottom"><span>LOCOMOTION FILTERS </span><span id="n-methods"></span></div>
+            <div class="bulk-select-buttons">
+               <button id="bulk-select-btn" class="uk-button uk-button-secondary bulk-select-button">Select all</button>
+               <button id="bulk-deselect-btn" class="uk-button uk-button-secondary bulk-select-button">Deselect All</button>
+               <button id="select-hardware-btn" class="uk-button uk-button-secondary bulk-select-button">Select All hardware</button>
+               <button id="deselect-hardware-btn" class="uk-button uk-button-secondary bulk-select-button">Deselect All hardware</button>
+               <button id='select-direction-btn' class="uk-button uk-button-secondary select-all-btn bulk-select-button">Select All direction</button>
+               <button id="deselect-direction-btn" class="uk-button uk-button-secondary bulk-select-button">Deselect All direction</button>
+            </div>
             <div id="filter-controls"></div>
    		</div>
    	</div>
@@ -104,6 +113,5 @@
       <script src = "./gallery.js"></script>
       <script src = "./similarityvis.js"></script>
       <script src = "./main.js"></script>
-      
    </body>
 </html>

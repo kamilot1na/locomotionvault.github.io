@@ -324,5 +324,16 @@ div .footer-area{
 	transform: translate(-960%, 0px);!imporant
 }*/
 
+.bulk-select-buttons {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
 
+.bulk-select-button {
+	background-color: #543984;
+	border-radius: 5px;
+    margin: 5px;
+}
 
